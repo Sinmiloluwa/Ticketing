@@ -41,6 +41,10 @@ elseif ($api === 'POST') {
     if ($uri[1] === 'createUser') {
         $user->create();
     }
+
+    if ($uri[1] === 'pay') {
+        $event->pay();
+    }
 }
 
 
